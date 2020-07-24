@@ -7,6 +7,7 @@ export default (props) => {
       <Text style={styles.displayValue} numberOfLines={1}>
         {props.value}
       </Text>
+      <Text style={styles.displayOperation}>{props.operation}</Text>
     </View>
   );
 };
@@ -22,5 +23,9 @@ const styles = StyleSheet.create({
   displayValue: {
     color: "#fff",
     fontSize: 60,
+  },
+  displayOperation: {
+    color: "#fff",
+    fontSize: 30,
   },
 });

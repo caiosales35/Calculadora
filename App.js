@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { StyleSheet, View, SafeAreaView } from "react-native";
+import { StyleSheet, View, SafeAreaView, Text } from "react-native";
 import Display from "./src/components/Display";
 import Button from "./src/components/Button";
 
@@ -59,7 +59,7 @@ export default function App() {
 
   return (
     <SafeAreaView style={styles.container}>
-      <Display value={dValu} />
+      <Display value={dValu} operation={operation} />
       <View style={styles.buttons}>
         <Button label="AC" triple onClick={cleanMemory} />
         <Button label="/" operation onClick={makeOperation} />
